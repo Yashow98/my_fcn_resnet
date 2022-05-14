@@ -180,7 +180,7 @@ def parse_args():
     parser.add_argument("--aux", default=False, type=bool, help="auxilier loss")  # 是否使用辅助分类器
     parser.add_argument("--device", default="cuda", help="training device") # 默认使用第一块gpu,没有gpu就是用cpu
     parser.add_argument("-b", "--batch-size", default=12, type=int) # 根据gpu显存进行设置
-    parser.add_argument("--epochs", default=50, type=int, metavar="N",
+    parser.add_argument("--epochs", default=10, type=int, metavar="N",
                         help="number of total epochs to train")
 
     parser.add_argument('--lr', default=0.0001, type=float, help='initial learning rate')

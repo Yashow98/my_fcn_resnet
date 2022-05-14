@@ -175,7 +175,7 @@ def parse_args():
     import argparse
     parser = argparse.ArgumentParser(description="pytorch fcn training")
 
-    parser.add_argument("--data-path", default="../input/pascal-voc-2012", help="VOCdevkit root")
+    parser.add_argument("--data-path", default="/kaggle/input/pascal-voc-2012", help="VOCdevkit root")
     parser.add_argument("--num-classes", default=20, type=int)
     parser.add_argument("--aux", default=False, type=bool, help="auxilier loss")  # 是否使用辅助分类器
     parser.add_argument("--device", default="cuda", help="training device") # 默认使用第一块gpu,没有gpu就是用cpu
